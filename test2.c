@@ -7,12 +7,12 @@ int main(int argc, char* argv[]){
         printf("Es wurden zuviele argumente übergeben\n");
         return -1;
     }
-    char* binary_number = argv[2];
+    char* binary_number = argv[1];
     printf("zeile 11\n");
     int i = 0;
-    for(; i<10 ; i++){
-        printf("zeile 13");
-        printf("%c", binary_number[i]);
+    for(int i = 0; binary_number[i] != '0' || binary_number[i] != '1' || binary_number[i] == '\0'; i++){
+        printf("erflogreich");
+        
     }
 
     printf("%s\n",argv[1]);
